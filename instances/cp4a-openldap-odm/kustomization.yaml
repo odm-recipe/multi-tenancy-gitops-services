@@ -1,6 +1,3 @@
-kind: Kustomization
-apiVersion: kustomize.config.k8s.io/v1beta1
-namespace: test
 resources:
 - secrets/openldap-ltb-secret.yaml
 - secrets/openldap-stack-ha-secret.yaml
