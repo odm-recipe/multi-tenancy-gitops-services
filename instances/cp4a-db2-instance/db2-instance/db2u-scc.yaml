@@ -1,9 +1,10 @@
+apiVersion: v1
 kind: SecurityContextConstraints
-apiVersion: security.openshift.io/v1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "210"
   name: db2u-scc
+  namespace: tools
 allowHostDirVolumePlugin: false
 allowHostIPC: false
 allowHostNetwork: false
