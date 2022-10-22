@@ -9,6 +9,7 @@ allowHostIPC: false
 allowHostNetwork: false
 allowHostPID: false
 allowHostPorts: false
+readOnlyRootFilesystem: true
 # privileged container is only needed for the init container that sets the Db2 kernel parameters
 allowPrivilegedContainer: true
 allowedCapabilities:
