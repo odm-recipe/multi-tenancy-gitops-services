@@ -7,7 +7,7 @@ resources:
 - configmaps/cm-openldap-phpldapadmin.yaml
 - configmaps/cm-openldap-stack-ha.yaml
 
-# - storage/data-openldap-pvc.yaml
+- roles/openldap-role.yaml
 
 - deployment/ldap-deployment.yaml
 - deployment/ldap-statefulset.yaml
