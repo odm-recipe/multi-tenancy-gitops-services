@@ -1,6 +1,8 @@
 apiVersion: db2u.databases.ibm.com/v1
 kind: Db2uCluster
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "230"
   name: cp4a-db2-instance
   namespace: tools
 spec:
