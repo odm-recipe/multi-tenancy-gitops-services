@@ -2,13 +2,14 @@ INGRESS_DOMAIN=$(oc get IngressController default -n openshift-ingress-operator 
 NAMESPACE=${NAMESPACE:-"odm"}
 echo ${NAMESPACE}
 echo ${INGRESS_DOMAIN}
+
 cat <<EOF |oc apply -f -
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
   name: cloud-pak-dashboard
 spec:
-  href: 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'
+  href: 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
   location: ApplicationMenu
   applicationMenu:
     section: IBM Cloud Paks
@@ -91,4 +92,4 @@ echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/res'
 echo Decision Runner
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/DecisionRunner'
 echo Decision Server Runtime
-echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'
+echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
