@@ -1,0 +1,26 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  annotations:
+    openshift.io/host.generated: 'true'
+    argocd.argoproj.io/sync-wave: "250"
+  name: icp4adeploy-odm-ds-console-route
+  namespace: cp4ba
+  labels:
+    app: ibm-odm-prod
+    app.kubernetes.io/part-of: icp4a
+    app.kubernetes.io/instance: icp4adeploy
+    release: icp4adeploy
+    app.kubernetes.io/version: 22.0.1
+spec:
+  host: >-
+    itzroks-662001rtxj-k8nsmp-4b4a324f027aea19c5cbc0c3275c4656-0000.us-south.containers.appdomain.cloud
+  to:
+    kind: Service
+    name: icp4adeploy-odm-decisionserverconsole
+    weight: 100
+  port:
+    targetPort: decisionserverconsole-https
+  tls:
+    termination: passthrough
+  wildcardPolicy: None
