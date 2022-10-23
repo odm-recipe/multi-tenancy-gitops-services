@@ -25,7 +25,6 @@
 #     registryPoll:
 #       interval: 45m
 ---
-
 # CP4BA 22.0.1 catalog
 apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
@@ -95,7 +94,6 @@ spec:
     registryPoll:
       interval: 45m
 ---
-
 # IBM Business Teams Service version 3.19.0
  apiVersion: operators.coreos.com/v1alpha1
  kind: CatalogSource
