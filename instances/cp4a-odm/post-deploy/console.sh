@@ -1,8 +1,5 @@
 INGRESS_DOMAIN=$(oc get IngressController default -n openshift-ingress-operator -o jsonpath='{.status.domain}')
 NAMESPACE=${NAMESPACE:-"odm"}
-echo ${NAMESPACE}
-echo ${INGRESS_DOMAIN}
-
 # cat <<EOF |oc apply -f -
 # apiVersion: console.openshift.io/v1
 # kind: ConsoleLink
