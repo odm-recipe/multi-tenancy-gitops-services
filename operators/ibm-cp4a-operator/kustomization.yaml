@@ -2,5 +2,6 @@ resources:
 - deployment/catalog_source.yaml
 - deployment/common-services-operator-group.yaml
 - deployment/ldap-bind-secret.yaml
-# - deployment/operator_group.yaml
-- deployment/subscription.yaml
+- deployment/operator_group.yaml
+- deployment/db2-subscription.yaml
+- deployment/cp4a-subscription.yaml

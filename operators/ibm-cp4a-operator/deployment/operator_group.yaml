@@ -1,7 +1,7 @@
 apiVersion: operators.coreos.com/v1alpha2
 kind: OperatorGroup
 metadata:
-  name: ibm-cp4a-operator-catalog-group
+  name: ibm-cp4a-db2-operator-group
   namespace: tools
   annotations:
     argocd.argoproj.io/sync-wave: "220"
