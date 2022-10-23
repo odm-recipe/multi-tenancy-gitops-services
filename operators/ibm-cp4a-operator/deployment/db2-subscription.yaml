@@ -9,5 +9,5 @@ spec:
   channel: v2.2
   name: db2u-operator
   installPlanApproval: Automatic
-  source: ibm-cp4a-operator-catalog
+  source: ibm-db2-operator-catalog
   sourceNamespace: openshift-marketplace
