@@ -83,6 +83,7 @@ EOF
 
 echo Cloud Pak Dashboard
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
+echo ----------------------------------------------
 echo Cloud Pak access info
 echo 'https://console-openshift-console.'$INGRESS_DOMAIN'/k8s/ns/tools/configmaps/icp4adeploy-cp4ba-access-info'
 echo Decision Center
