@@ -114,12 +114,3 @@ spec:
           requests:
             storage: 8Gi
         volumeMode: Filesystem
-      status:
-        phase: Pending
-  serviceName: openldap-openldap-stack-ha-headless
-  podManagementPolicy: OrderedReady
-  updateStrategy:
-    type: RollingUpdate
-    rollingUpdate:
-      partition: 0
-  revisionHistoryLimit: 10
