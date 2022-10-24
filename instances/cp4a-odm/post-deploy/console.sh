@@ -3,25 +3,25 @@ NAMESPACE=${NAMESPACE:-"odm"}
 echo ----------------------------------------------
 echo Cloud Pak Dashboard
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
-echo ----------------------------------------------
+echo ==============================================
 echo Cloud Pak access info
 echo ----------------------------------------------
 echo 'https://console-openshift-console.'$INGRESS_DOMAIN'/k8s/ns/tools/configmaps/icp4adeploy-cp4ba-access-info'
 echo ----------------------------------------------
 echo Decision Center
-echo ----------------------------------------------
+echo ==============================================
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/decisioncenter'
 echo ----------------------------------------------
 echo Decision Server Console
-echo ----------------------------------------------
+echo ==============================================
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/res'
 echo ----------------------------------------------
 echo Decision Runner
-echo ----------------------------------------------
+echo ==============================================
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/DecisionRunner'
 echo ----------------------------------------------
 echo Decision Server Runtime
-echo ----------------------------------------------
+echo ==============================================
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
 
 # cat <<EOF |oc apply -f -
