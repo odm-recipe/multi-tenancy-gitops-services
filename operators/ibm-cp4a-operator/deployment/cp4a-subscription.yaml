@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "240"
   name: ibm-cp4a-operator-subscription
-  namespace: tools
+  namespace: cp4a
 spec:
   channel: v22.1
   name: ibm-cp4a-operator
