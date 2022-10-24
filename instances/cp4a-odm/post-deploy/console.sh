@@ -19,19 +19,6 @@ cat <<EOF |oc apply -f -
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
-  name: cloud-pak-access-info
-spec:
-  href: https://console-openshift-console.$INGRESS_DOMAIN/k8s/ns/tools/configmaps/icp4adeploy-cp4ba-access-info
-  location: ApplicationMenu
-  applicationMenu:
-    section: IBM Cloud Paks
-  text: Cloud Pak Access Info
-EOF
-
-cat <<EOF |oc apply -f -
-apiVersion: console.openshift.io/v1
-kind: ConsoleLink
-metadata:
   name: decision-center
 spec:
   href: https://cpd-$NAMESPACE.$INGRESS_DOMAIN/odm/decisioncenter
@@ -84,10 +71,6 @@ echo ----------------------------------------------
 echo Cloud Pak Dashboard
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN''
 echo ==============================================
-echo Cloud Pak access info
-echo ----------------------------------------------
-echo 'https://console-openshift-console.'$INGRESS_DOMAIN'/k8s/ns/tools/configmaps/icp4adeploy-cp4ba-access-info'
-echo ----------------------------------------------
 echo Decision Center
 echo ==============================================
 echo 'https://cpd-'$NAMESPACE'.'$INGRESS_DOMAIN'/odm/decisioncenter'
