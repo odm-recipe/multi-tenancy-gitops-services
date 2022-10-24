@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "230"
   name: cp4a-db2-instance
-  namespace: tools
+  namespace: db2
 spec:
   license:
     accept: true
