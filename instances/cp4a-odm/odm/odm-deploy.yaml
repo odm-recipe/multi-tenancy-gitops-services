@@ -14,6 +14,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "250"
   name: icp4adeploy
+  namespace: cp4a
   labels:
     app.kubernetes.io/instance: ibm-dba
     app.kubernetes.io/managed-by: ibm-dba
