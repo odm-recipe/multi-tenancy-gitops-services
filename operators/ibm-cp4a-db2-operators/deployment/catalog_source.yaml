@@ -8,22 +8,6 @@
 # disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 #
 ###############################################################################
-# DB2 
-# apiVersion: operators.coreos.com/v1alpha1
-# kind: CatalogSource
-# metadata:
-#   annotations:
-#     argocd.argoproj.io/sync-wave: "210"
-#   name: ibm-db2-operator-catalog
-#   namespace: openshift-marketplace
-# spec:
-#   displayName: "IBM Operator Catalog" 
-#   publisher: IBM
-#   sourceType: grpc
-#   image: icr.io/cpopen/ibm-operator-catalog
-#   updateStrategy:
-#     registryPoll:
-#       interval: 45m
 ---
 # CP4BA 22.0.1 catalog
 apiVersion: operators.coreos.com/v1alpha1
